@@ -4,11 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Up - History of Cinema and Theater</title>
-  
-  <!-- Add Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js"></script>
+
+
 </head>
 <body>
   <header class="navbar">
@@ -19,7 +22,7 @@
       <a href="movies.html">Old Movies</a>
       <a href="signup.html">Sign Up</a>
       <a href="login.html">Login</a>
-      <a href="profile.html" class="profile-icon"><i class="fas fa-user"></i> Profile</a> <!-- Profile Icon -->
+      <a href="profile.html">Profile</a>
       <a href="info.html">Info</a>
     </nav>
   </header>
@@ -37,13 +40,6 @@
     </form>
   </main>
 
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js"></script>
-
-  <!-- Your Firebase config and custom JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
-
