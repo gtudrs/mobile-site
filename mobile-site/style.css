@@ -1,0 +1,178 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #1DCD9F;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #222222;
+  color: #1DCD9F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #1DCD9F;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #169976;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu a {
+  padding: 1rem;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+
+.menu a:hover {
+  background-color: #1DCD9F;
+  color: #000;
+}
+
+/* Profile Icon */
+.profile-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #1DCD9F;
+  text-decoration: none;
+}
+
+.profile-icon i {
+  font-size: 20px; /* Adjust icon size */
+}
+
+/* Hidden Menu (JS toggled) */
+.hidden {
+  display: none;
+}
+
+/* Main Content */
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #1DCD9F;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #F0F0F0;
+}
+
+/* Login Form Styling */
+.login-form {
+  max-width: 300px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #222222;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(28, 205, 159, 0.3);
+}
+
+.login-form label {
+  color: #1DCD9F;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #169976;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #1DCD9F;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #1DCD9F;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #169976;
+  color: #ffffff;
+}
+
+/* Profile Box */
+.profile-box {
+  background-color: #222222;
+  max-width: 320px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #F0F0F0;
+  box-shadow: 0 0 10px rgba(28, 205, 159, 0.2);
+}
+
+.profile-box p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  color: #1DCD9F;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+  .navbar .menu {
+    flex-direction: column;
+    display: none; /* Hidden by default */
+  }
+
+  .navbar .menu-btn {
+    display: block;
+  }
+
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  .menu-btn {
+    font-size: 1.6rem;
+  }
+
+  .menu:not(.hidden) {
+    display: block;
+  }
+}
